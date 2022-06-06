@@ -131,7 +131,7 @@ margin-right: 0px!important;
   opacity: 1.0;
 }
 
-.fixed-adults {
+.fixed-clients {
   position: fixed;
   display: block;
   top: 0;
@@ -144,7 +144,8 @@ margin-right: 0px!important;
           transform: translateZ(0);
   will-change: transform;
 }
-.fixed-faqs {
+
+.fixed-clients:hover {
   position: fixed;
   display: block;
   top: 0;
@@ -156,4 +157,7 @@ margin-right: 0px!important;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
-} 
+  opacity: 1.0;
+}
+
+

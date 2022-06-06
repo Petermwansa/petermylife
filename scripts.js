@@ -1,8 +1,10 @@
 
-var cursor = document.getElementById("cursor");
+document.addEventListener("click", function (e){
+    if(e.target.classList.contains("gallery-item")) {
+        const src = e.target.getAttribute("src");
+        document.querySelector(".modal-img").src = src;
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+        myModal.show();
+    }
+});
 
-document.onmousemove = function(e) {
-    cursor.style.left = (e.pageX - 25) + "px";
-    cursor.style.top = (e.pageY - 25) + "px";
-    cursor.style.display = "block";
-}
