@@ -10,6 +10,14 @@ modal = () => {
     });
 };
 
+
+load = () => {
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+        loader.style.display = "none";
+    })
+}
+
 nav = () => {
     const navSlide = () => {
         const burger = document.querySelector('.burger');
@@ -34,6 +42,8 @@ cursor = () => {
 
 
 modal();
+
+load();
 
 navSlide();
 

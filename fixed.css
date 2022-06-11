@@ -161,3 +161,135 @@ margin-right: 0px!important;
 }
 
 
+@media (max-width: 576px) {
+  .fixed-work {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-work:hover {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 1.0;
+  }
+  
+  .fixed-social {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-social:hover {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 1.0;
+  }
+  
+  .fixed-clients {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-clients:hover {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 1.0;
+  }
+  
+}
+
+@media (max-width: 980px) {
+  .fixed-work {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-work:hover {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 1.0;
+  }
+  
+  .fixed-social {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-social:hover {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 1.0;
+  }
+  
+  .fixed-clients {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  .fixed-clients:hover {
+    position: fixed;
+    display: block;
+    background-size: 100% 100%;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    opacity: 1.0;
+  }
+  
+}
+
