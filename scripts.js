@@ -11,6 +11,56 @@ modal = () => {
 };
 
 
+
+//CARDS SECTION
+
+const cards = document.querySelectorAll('.card');
+
+//Cards callback function
+const cardObserverCallback = (cardsToWatch, cardObserver) => {
+    cardsToWatch.forEach(cardToWatch => {
+        if(cardToWatch.isIntersecting) {
+            cardToWatch.target.classList.remove('card');
+            cardObserver.unobserve(cardToWatch.target);
+        }
+    });
+}
+
+//card option
+const cardObserverOptions = {
+    threshod: .5
+}
+
+//card oberver
+const cardObserver = new IntersectionObserver(cardObserverCallback, cardObserverOptions);
+
+//card observer on card
+cards.forEach(card => {
+    cardObserver.observe(card)
+})
+
+
+
+
+
+//SCROLLER SECTION
+
+upwards = () => {
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.scrollTop');
+        scroll.classList.toggle("active", window.scrollY > 500 )
+    })
+
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+}
+
+
+
 load = () => {
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function() {
@@ -41,7 +91,12 @@ cursor = () => {
 }
 
 
+
+
+
 modal();
+
+upwards();
 
 load();
 

@@ -59,8 +59,39 @@ body {
 
 
 
+.card {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2.0s ease-in-out;
 
 
+}
+
+
+
+.scrollTop {
+  position: fixed;
+  bottom: 800px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background:#FCC549 url(images/up.png);
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.scrollTop.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
@@ -1538,7 +1569,7 @@ div:hover ~ #cursor {
     position: relative; */
   }
   .fixed-social {
-    background-image: url(images/follow.jpeg);
+    background-image: url(images/mine18.jpeg);
     z-index: -1;
   }
   .fixed-clients {
