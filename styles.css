@@ -40,6 +40,30 @@ body {
   background-color: #000;
 }
 
+
+
+
+
+
+/* for the scrolling text  */
+
+
+.me {
+  margin-top: 150vh;
+  padding-top: 200px;
+  left: 30%;
+  position: absolute;
+}
+
+/* for the scrolling text  */
+
+
+
+
+
+
+
+
 /* start for the about page  */
 
 .copyright {
@@ -352,7 +376,7 @@ button:hover {
   letter-spacing: 5px;
   text-transform: uppercase;
   margin-bottom: 400px;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
   border-radius: 0.25rem;
   background-color: none;
   opacity: 0;
@@ -361,23 +385,51 @@ button:hover {
 
 
 
-.wrappers-text h1,
-.wrappers-text h4 {
+.wrappers-text h2,
+.wrappers-text h3,
+.wrappers-text h4,
+.wrappers-text h5,
+.wrappers-text h6 {
   opacity: 0;
-  margin: 0;
+  padding: 100px, 0px;
 }
 
-.wrappers-text h1 {
+.wrappers-text h2 {
   color: #FCC549;
   font-size: 90px;
   font-weight: 900;
-  animation: ani2 4.75s ease-out 3s forwards
+  animation: ani2 4.75s ease-out 5s forwards;
+  padding: 50px 10px;
+}
+.wrappers-text h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+  animation: ani2 4.75s ease-out 6.5s forwards
+}
+.wrappers-text h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+  animation: ani2 4.75s ease-out 7.5s forwards
+}
+.wrappers-text h5 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+  animation: ani2 4.75s ease-out 8.5s forwards
+}
+.wrappers-text h6 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+  animation: ani2 4.75s ease-out 9.5s forwards
 }
 
-.wrappers-text h4 {
-  color: #000;
-  animation: ani2 4.75s ease-out 4s forwards
-}
+/* .wrappers-text h4 {
+  color: #ffff;
+  animation: ani2 4.75s ease-out 8.5s forwards
+} */
 
 @keyframes ani2 {
   100%{
@@ -391,7 +443,7 @@ button:hover {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 550px) {
   .wrappers {
     position: relative;
     height: 100vh;
@@ -404,7 +456,7 @@ button:hover {
   
   .wrappers-text {
     text-align: center;
-    font-size: 750px;
+    font-size: 50px;
     line-height: 40px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -423,12 +475,40 @@ button:hover {
     margin: 0;
   }
 
-  .wrappers-text h1 {
+  .wrappers-text h2 {
     color: #FCC549;
     font-size: 35px;
     font-weight: 900;
-    animation: ani2 4.75s ease-out 3s forwards;
-    padding-left: 0px 10px;
+    animation: ani2 4.75s ease-out 5s forwards;
+    padding: 50px 0px;
+  }
+  .wrappers-text h3 {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 6.5s forwards;
+    padding: 0px 20px;
+  }
+  .wrappers-text h4 {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 7.5s forwards;
+    padding: 0px 10px;
+  }
+  .wrappers-text h5 {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 8.5s forwards;
+    padding: 0px 10px;
+  }
+  .wrappers-text h6 {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 9.5s forwards;
+    padding: 0px 10px;
   }
 
 }
@@ -446,12 +526,12 @@ button:hover {
   
   .wrappers-text {
     text-align: center;
-    font-size: 550px;
-    line-height: 30px;
-    letter-spacing: 2px;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 150px;
-    padding: 2rem 1.5rem;
+    margin-bottom: 200px;
+    padding: 3rem 2rem;
     border-radius: 0.25rem;
     background-color: none;
     opacity: 0;
@@ -465,15 +545,44 @@ button:hover {
     margin: 0;
   }
 
-  .wrappers-text h1 {
+  .wrappers-text h2 {
     color: #FCC549;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 900;
-    animation: ani2 4.75s ease-out 3s forwards;
-    padding-left: 0px 10px;
+    animation: ani2 4.75s ease-out 5s forwards;
+    padding: 50px 0px;
+  }
+  .wrappers-text h3 {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 6.5s forwards;
+    padding: 0px 20px;
+  }
+  .wrappers-text h4 {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 7.5s forwards;
+    padding: 0px 10px;
+  }
+  .wrappers-text h5 {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 8.5s forwards;
+    padding: 0px 10px;
+  }
+  .wrappers-text h6 {
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 200;
+    animation: ani2 4.75s ease-out 9.5s forwards;
+    padding: 0px 10px;
   }
 
 }
+
 
 
 
@@ -628,13 +737,44 @@ a {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 550px) {
 
   .name {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    margin: 3rem 0 3rem 50%;
-    padding: 2rem 0;
+    margin: 5rem 0 5rem 50%;
+    padding: 3rem 0;
+    padding-bottom: 3rem;
+    /* margin-top: 50%; */
+    /* margin-right: 50%; */
+  }
+  
+  .name h1 {
+    position: absolute;
+    color: #0084ff;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+  }
+  
+  .name h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+  }
+  .name h1:nth-child(2) {
+    color: #0084ff;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+
+}
+
+@media (max-width: 980px) {
+
+  .name {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    margin: 5rem 0 5rem 50%;
+    padding: 3rem 0;
     padding-bottom: 3rem;
     /* margin-top: 50%; */
     /* margin-right: 50%; */
@@ -646,33 +786,17 @@ a {
     transform: translate(-50%, -50%);
     font-size: 3em;
   }
-
-
-}
-
-@media (max-width: 980px) {
-
-  .name {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
-    margin: 4rem 0 4rem 50%;
-    padding: 2rem 0;
-    padding-bottom: 4rem;
-    /* margin-top: 50%; */
-    /* margin-right: 50%; */
-  }
   
-  .name h1 {
-    position: absolute;
+  .name h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+  }
+  .name h1:nth-child(2) {
     color: #0084ff;
-    transform: translate(-50%, -50%);
-    font-size: 4em;
+    animation: animate 4s ease-in-out infinite;
   }
 
 }
-
-
-
 
 .container {
   width: 100%;
