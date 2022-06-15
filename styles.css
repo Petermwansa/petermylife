@@ -14,6 +14,65 @@ body {
   padding: 0;
 }
 
+
+.about-body {
+width: 100%;
+padding: 0;
+background-color: #000;
+}
+
+.about-div {
+  margin-top: 10%;
+}
+.about-body img {
+  height: auto;
+  width: 620px;
+}
+
+.about-me-text {
+  width: 650px;
+}
+
+.about-me-text h1 {
+  color: #FCC549;
+  font-size: 90px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-me-text h5 {
+  color: #FCC549;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+span {
+  color: #B80000;
+}
+
+.about-me-text p {
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.photo-about {
+  padding: 200px;
+}
+
 .list {
   text-decoration: none;
   list-style: none;
@@ -190,14 +249,14 @@ label #cancel {
   align-items: center;
 }
 
-.about-content img {
+.about-img {
   height: auto;
-  width: 600px;
+  width: 40%;
   max-width: 100%;
 }
 
 .about-text {
-  width: 50%;
+  width: 100%;
   max-width: 80%;
   padding: 0 0px;
 }
