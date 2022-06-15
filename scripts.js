@@ -39,7 +39,12 @@ cards.forEach(card => {
     cardObserver.observe(card)
 })
 
-
+load = () => {
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function() {
+        loader.style.display = "none";
+    });
+};
 
 
 
@@ -60,13 +65,14 @@ upwards = () => {
 }
 
 
+navbar = () => {
+    const hamburger = document.querySelector('.hamburger');
 
-load = () => {
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function() {
-        loader.style.display = "none";
-    })
-}
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('is-active');
+    });
+};
+
 
 nav = () => {
     const navSlide = () => {
@@ -97,6 +103,10 @@ cursor = () => {
 modal();
 
 upwards();
+
+load();
+
+navbar();
 
 load();
 

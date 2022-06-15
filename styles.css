@@ -38,8 +38,116 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #000;
+  margin: 0;
+  padding: 0;
 }
 
+.list {
+  text-decoration: none;
+  list-style: none;
+
+}
+
+nav {
+  height: 60px;
+  background: #FCC549;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+}
+
+nav ul li a:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #ffff;
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform .6s linear;
+
+}
+
+nav ul li a:hover:before {
+  transform: scale(1);
+  transform-origin: left;
+
+}
+
+label #btn,
+label #cancel {
+  color: #fff;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+  left: 10%;
+  position: absolute;
+}
+
+#check {
+  display: none;
+  position: fixed;
+}
+
+
+@media (max-width: 980px) {
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 860px) {
+  label #btn {
+    display: block;
+  }
+
+  .list {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #FCC549;
+    top: 60px;
+    z-index: 20000000;
+    left: -100%;
+    text-align: center;
+    transition: all .7s;
+    opacity: 0.8;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+}
 
 
 
@@ -295,11 +403,16 @@ button:hover {
 #preloader {
 
   background: #000 url(images/loader.gif) no-repeat center;
-  height: 100vh;
-  background-size: 10%;
+  height: 100%;
   width: 100%;
-  position: fixed;
+  background-size: 10%;
+  position: absolute;
   z-index: 100;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
 }
 
 .none {
@@ -344,7 +457,7 @@ button:hover {
       
       .header .bgColor1 {
       background-color: #3E3E3E;
-      min-height: 30vh;
+      min-height: 10vh;
       overflow-x: hidden;
       z-index: -1;
       position: relative;
@@ -352,7 +465,7 @@ button:hover {
       }
       .header .bgColor2 {
       background-color: #819808;
-      min-height: 30vh;
+      min-height: 10vh;
 
       overflow-x: hidden;
       z-index: -1;
@@ -371,7 +484,7 @@ button:hover {
       
       .header .bgColor1 {
       background-color: #3E3E3E;
-      min-height: 60vh;
+      min-height: 20vh;
       overflow-x: hidden;
       z-index: -1;
       position: relative;
@@ -379,7 +492,7 @@ button:hover {
       }
       .header .bgColor2 {
       background-color: #819808;
-      min-height: 60vh;
+      min-height: 20vh;
 
       overflow-x: hidden;
       z-index: -1;
