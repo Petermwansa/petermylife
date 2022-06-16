@@ -53,7 +53,7 @@ background-color: #000;
   height: auto;
   width: 620px;
   border-radius: 50%;
-  box-shadow: 90px 20px 50px white;
+  box-shadow: 0 0 90px 0 white;
 }
 
 .about-me-text {
