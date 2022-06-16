@@ -24,6 +24,18 @@ background-color: #000;
 .about-div {
   margin-top: 10%;
 }
+
+.about-div p {
+  color: #fff;
+  line-height: 25px;
+}
+
+.about-div h1, h5 {
+  color: #FCC549;
+}
+
+
+
 .about-body img {
   height: auto;
   width: 620px;
