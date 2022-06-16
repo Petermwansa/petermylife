@@ -1,3 +1,12 @@
+cursor = () => {
+    var cursor = document.getElementById("cursor");
+
+    document.onmousemove = function(e) {
+        cursor.style.left = (e.pageX - 25) + "px";
+        cursor.style.top = (e.pageY - 25) + "px";
+        cursor.style.display = "block";
+    }
+}
 
 modal = () => {
     document.addEventListener("click", function (e){
@@ -86,19 +95,11 @@ nav = () => {
     }
 }
 
-cursor = () => {
-    var cursor = document.getElementById("cursor");
-
-    document.onmousemove = function(e) {
-        cursor.style.left = (e.pageX - 25) + "px";
-        cursor.style.top = (e.pageY - 25) + "px";
-        cursor.style.display = "block";
-    }
-}
 
 
 
 
+cursor();
 
 modal();
 
@@ -112,7 +113,7 @@ load();
 
 navSlide();
 
-cursor();
+
 
 
 
