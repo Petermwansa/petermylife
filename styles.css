@@ -1471,7 +1471,7 @@ blockquote {
   z-index: 1;
 }
 
-}
+
 /* 
 .trial {
 
@@ -1912,6 +1912,7 @@ footer svg.svg-inline--fa:hover {
 }
 
 hr.socket {
+  color: #ffff;
   width: 100%;
   border-top: .2rem solid #ffffff;
   margin-top: 3rem;
