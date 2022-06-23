@@ -75,11 +75,7 @@ upwards = () => {
 
 
 navbar = () => {
-    const hamburger = document.querySelector('.hamburger');
 
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('is-active');
-    });
 };
 
 
@@ -106,12 +102,6 @@ modal();
 upwards();
 
 load();
-
-navbar();
-
-load();
-
-navSlide();
 
 
 
