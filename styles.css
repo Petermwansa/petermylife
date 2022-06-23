@@ -1098,6 +1098,7 @@ a {
   width: 350px;
   overflow: hidden;
   transition: 1.5s;
+  z-index: 20;
 }
 
 .box img {
@@ -1122,6 +1123,7 @@ a {
   display: flex;
   padding: 20px;
   align-items: center;
+  z-index: 20;
 
 }
 
@@ -1780,7 +1782,7 @@ body {
   transition-duration: 0.5s;
   transition-timing-function: ease-out;
   opacity: 0.5;
-  /* z-index: 1; */
+  z-index: -1;
 
 }
 
