@@ -244,7 +244,7 @@ label #cancel {
     left: -100%;
     text-align: center;
     transition: all .9s;
-    opacity: 0.8;
+    opacity: 1;
   }
   nav {
     position: inherit;
@@ -419,7 +419,7 @@ button {
   color: #000;
   border: 2px solid transparent;
   text-decoration: none;
-  padding: 10px 10px;
+  margin: 40px 0%;
   border-radius: 30px;
   font-size: 17px;
   font-weight: bold;
@@ -1895,7 +1895,7 @@ footer {
   bottom: 0;
   width: 100%;
   color: white;
-  padding: 8rem 8rem 1rem 8rem;
+  padding: 8rem 9rem 1rem 9rem;
 }
 
 footer img {
