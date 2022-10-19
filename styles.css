@@ -295,7 +295,6 @@ label #cancel {
   transform: translateY(100px);
   transition: all 2.0s ease-in-out;
 
-
 }
 
 
@@ -1783,7 +1782,6 @@ body {
   transition-timing-function: ease-out;
   opacity: 0.5;
   z-index: -1;
-
 }
 
 div:hover ~ #cursor {
